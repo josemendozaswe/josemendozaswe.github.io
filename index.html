@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>José A. Mendoza — Software Engineer &amp; Salesforce Architect</title>
+  <meta name="description" content="José A. Mendoza — Software Engineer and Salesforce Consultant. Computer scientist with 2 Salesforce Architect designations, 26 certifications, and 5+ years building and operating enterprise platforms with Python, APEX, Linux & DevOps." />
+  <meta name="author" content="José A. Mendoza" />
+  <meta name="theme-color" content="#FBFAF7" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#14120E" media="(prefers-color-scheme: dark)" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://josemendozaswe.github.io/" />
+
+  <!-- Open Graph (LinkedIn, WhatsApp, Facebook) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="José A. Mendoza" />
+  <meta property="og:title" content="José A. Mendoza — Software Engineer &amp; Salesforce Architect" />
+  <meta property="og:description" content="Computer scientist & software engineer. 2 Salesforce Architect designations, 26 certifications, 5+ years engineering enterprise platforms." />
+  <meta property="og:url" content="https://josemendozaswe.github.io/" />
+  <meta property="og:image" content="https://josemendozaswe.github.io/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="José A. Mendoza — Software Engineer & Salesforce Architect" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="José A. Mendoza — Software Engineer &amp; Salesforce Architect" />
+  <meta name="twitter:description" content="Computer scientist & software engineer. 2 Salesforce Architect designations, 26 certifications, 5+ years engineering enterprise platforms." />
+  <meta name="twitter:image" content="https://josemendozaswe.github.io/assets/og-image.png" />
+
+  <!-- Icons -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- Set theme before paint to avoid flash -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..600&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/site.css" />
+
+  <!-- Structured data: Person (helps Google & rich results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "José A. Mendoza",
+    "url": "https://josemendozaswe.github.io/",
+    "image": "https://josemendozaswe.github.io/assets/profile.jpg",
+    "jobTitle": "Software Engineer & Salesforce Consultant",
+    "email": "mailto:josemendozaswe@outlook.com",
+    "knowsLanguage": ["es", "en", "fr", "pt", "de"],
+    "address": { "@type": "PostalAddress", "addressLocality": "Mexico City", "addressCountry": "MX" },
+    "sameAs": [
+      "https://github.com/josemendozaswe",
+      "https://www.linkedin.com/in/josemendozaswe/",
+      "https://www.salesforce.com/trailblazer/josemendozaswe"
+    ],
+    "knowsAbout": ["Software Engineering", "Computer Science", "Salesforce Architecture", "APEX", "Python", "Linux", "DevOps", "System Design", "Technical Enablement"],
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of the People" },
+      { "@type": "CollegeOrUniversity", "name": "Metropolitan Autonomous University" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ═══ NAV ═══ -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">José A. Mendoza<span class="dot">.</span></a>
+    <nav class="nav-right" aria-label="Primary">
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#work">Experience</a></li>
+        <li><a href="#certs">Certs</a></li>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle light/dark theme" aria-pressed="false">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ═══ HERO ═══ -->
+<span id="top"></span>
+<div class="hero wrap">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">Computer Scientist · Software Engineer</p>
+      <h1>Building<br/>clean, <em>reliable</em><br/>systems.</h1>
+      <p class="hero-lead">
+        I'm <strong>José A. Mendoza</strong> — a computer scientist and software engineer
+        who turns complex problems into dependable software, from first principles to production.
+        Salesforce Architect by certification, generalist engineer by trade.
+      </p>
+      <div class="hero-actions">
+        <a href="mailto:josemendozaswe@outlook.com" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          Get in touch
+        </a>
+        <a href="assets/jose-mendoza-cv.pdf" class="btn btn-ghost" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+          Download CV
+        </a>
+        <a href="https://github.com/josemendozaswe" target="_blank" rel="noopener" class="btn btn-ghost" aria-label="GitHub profile">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2A10 10 0 0 0 8.8 21.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7 0-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.8-2.4 4.6-4.6 4.9.3.3.6.9.6 1.8v2.7c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/josemendozaswe/" target="_blank" rel="noopener" class="btn btn-ghost" aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <figure class="hero-portrait">
+      <img src="assets/profile.jpg" alt="Portrait of José A. Mendoza" width="436" height="517" />
+      <figcaption><span>Mexico City, MX</span><span>2026</span></figcaption>
+    </figure>
+  </div>
+
+  <!-- stats (all verifiable from CV) -->
+  <div class="stats">
+    <div class="stat"><div class="n">B.Sc.</div><div class="l">Computer Science degree</div></div>
+    <div class="stat"><div class="n">2×</div><div class="l">Salesforce Architect designations</div></div>
+    <div class="stat"><div class="n">26</div><div class="l">Salesforce certifications</div></div>
+    <div class="stat"><div class="n">5</div><div class="l">Languages spoken</div></div>
+  </div>
+</div>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-index">01 / About</span>
+      <h2 class="sec-title">A generalist engineer<br/>with a builder's instinct</h2>
+    </div>
+    <div class="sec-body reveal">
+      <p class="about-lead">
+        I think in <em>systems</em> — data structures, algorithms, and architecture first,
+        then the tools that serve them.
+      </p>
+      <div class="pillars">
+        <div class="pillar">
+          <h3><span class="pnum">01</span> Software Engineering</h3>
+          <p>Hands-on across the stack — Python, Java, JavaScript/TypeScript, APEX, SQL and Bash. I design automation, integrations, and clean, testable code grounded in CS fundamentals.</p>
+        </div>
+        <div class="pillar">
+          <h3><span class="pnum">02</span> Architecture &amp; Platforms</h3>
+          <p>Salesforce System &amp; Application Architect. Comfortable with Linux, CI/CD, deployments, monitoring and root-cause analysis — operating enterprise platforms at scale with real SLA ownership.</p>
+        </div>
+        <div class="pillar">
+          <h3><span class="pnum">03</span> Enablement</h3>
+          <p>A background in Psychology and 12+ years designing curricula with Adult Learning Theory. I turn complex technical subjects into structured, learnable knowledge — and mentor teams.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ STACK ═══ -->
+<section id="stack">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-index">02 / Stack</span>
+      <h2 class="sec-title">Tools of the trade</h2>
+    </div>
+    <div class="sec-body reveal">
+      <div class="stack-list">
+        <div class="stack-row">
+          <h4>Languages &amp; Scripting<span class="tag">Core</span></h4>
+          <div class="chips">
+            <span class="chip">Python</span><span class="chip">Java</span><span class="chip">JavaScript / TypeScript</span><span class="chip">APEX</span><span class="chip">Bash / Shell</span><span class="chip">Google Apps Script</span><span class="chip">HTML</span><span class="chip">CSS</span>
+          </div>
+        </div>
+        <div class="stack-row">
+          <h4>Databases &amp; Query<span class="tag">Expert</span></h4>
+          <div class="chips">
+            <span class="chip">SQL</span><span class="chip">MySQL</span><span class="chip">PostgreSQL</span><span class="chip">SQL Server</span><span class="chip">SOQL / SOSL</span>
+          </div>
+        </div>
+        <div class="stack-row">
+          <h4>Cloud &amp; DevOps<span class="tag">Active</span></h4>
+          <div class="chips">
+            <span class="chip">Linux</span><span class="chip">AWS</span><span class="chip">Git / GitHub</span><span class="chip">GitHub Actions</span><span class="chip">Jenkins</span><span class="chip">BitBucket</span><span class="chip">CI/CD</span>
+          </div>
+        </div>
+        <div class="stack-row">
+          <h4>Salesforce Platform<span class="tag">Architect</span></h4>
+          <div class="chips">
+            <span class="chip">Sales &amp; Service Cloud</span><span class="chip">LWC</span><span class="chip">Flow</span><span class="chip">Data Cloud / Data 360</span><span class="chip">Agentforce</span><span class="chip">Marketing Cloud</span><span class="chip">MuleSoft</span>
+          </div>
+        </div>
+        <div class="stack-row">
+          <h4>Monitoring, ITSM &amp; Security<span class="tag">Ops</span></h4>
+          <div class="chips">
+            <span class="chip">Splunk</span><span class="chip">Tableau</span><span class="chip">ServiceNow</span><span class="chip">Jira</span><span class="chip">Confluence</span><span class="chip">Postman</span><span class="chip">Okta</span><span class="chip">SSO / SAML</span>
+          </div>
+        </div>
+        <div class="stack-row">
+          <h4>Methodologies &amp; Enablement<span class="tag">Active</span></h4>
+          <div class="chips">
+            <span class="chip">Agile</span><span class="chip">Scrum / Kanban</span><span class="chip">ITIL</span><span class="chip">Instructional Design</span><span class="chip">Technical Writing</span><span class="chip">Facilitation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ EXPERIENCE ═══ -->
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-index">03 / Experience</span>
+      <h2 class="sec-title">Selected work</h2>
+    </div>
+    <div class="sec-body reveal">
+      <div class="xp">
+        <div class="xp-item">
+          <div class="xp-when">Sep 2025 — Present<span class="co">Salesforce</span></div>
+          <div class="xp-body">
+            <div class="xp-role">Customer Success Manager</div>
+            <ul>
+              <li>Technical trusted advisor for <strong>Signature-tier enterprise accounts</strong> (Walmart, The GAP Inc., Kohl's, LyondellBasell, National Grid USA) — guiding platform architecture, integration strategy and roadmap alignment.</li>
+              <li>Lead <strong>technical escalation management</strong> for high-priority Service Cloud issues, coordinating across TSE, R&amp;D and Product to drive resolution and prevent recurrence.</li>
+              <li>Advise on release readiness, feature deprecations and platform migrations with minimal disruption to enterprise-scale environments.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="xp-item">
+          <div class="xp-when">Jul 2024 — Aug 2025<span class="co">Salesforce</span></div>
+          <div class="xp-body">
+            <div class="xp-role">Technical Support Engineer</div>
+            <ul>
+              <li>Subject Matter Expert and <strong>team lead for a 10-member specialist team</strong>, ensuring top-tier resolution of complex enterprise platform issues.</li>
+              <li>Resolved <strong>250+ complex cases</strong> across APEX, integrations and Service Cloud — maintaining a <strong>5-star satisfaction rating</strong>.</li>
+              <li>Designed and delivered technical enablement programs using Instructional Design to accelerate skill development and cut resolution time.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="xp-item">
+          <div class="xp-when">Apr 2023 — Jul 2024<span class="co">Wizeline</span></div>
+          <div class="xp-body">
+            <div class="xp-role">Salesforce Developer &amp; Main Admin</div>
+            <ul>
+              <li>Promoted to <strong>Lead Platform Administrator</strong>, owning CRM platform architecture, security configuration and the deployment lifecycle.</li>
+              <li>Redesigned the CI/CD deployment lifecycle, <strong>cutting release cycle time by 50%+</strong> through pipeline automation and governance standards.</li>
+              <li>Migrated <strong>85%+ of legacy process automations</strong> to a modern declarative architecture, improving maintainability and performance.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="xp-item">
+          <div class="xp-when">Dec 2021 — Apr 2023<span class="co">Accenture</span></div>
+          <div class="xp-body">
+            <div class="xp-role">Salesforce Engineer &amp; DevOps Support</div>
+            <ul>
+              <li>Delivered L2/L3 resolutions — root-cause analysis, debugging and proactive infrastructure monitoring with Splunk across enterprise environments.</li>
+              <li>Improved <strong>SLA compliance from 90% to 98%+</strong> via process optimization and automated incident-response workflows in Python &amp; Bash.</li>
+              <li>Accelerated production support operations by <strong>30%</strong> while keeping reopened incidents below 2%.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="xp-item">
+          <div class="xp-when">Jan 2021 — Dec 2021<span class="co">Deloitte</span></div>
+          <div class="xp-body">
+            <div class="xp-role">Salesforce Technical Consultant</div>
+            <ul>
+              <li>Automated key enterprise business processes with platform-native tooling and SQL-based data validation, reducing manual effort and improving accuracy.</li>
+              <li>Led <strong>client-facing enablement</strong> — technical workshops, architecture reviews and project governance as a trusted advisor on best practices.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="xp-item">
+          <div class="xp-when">Aug 2012 — Jul 2024<span class="co">UNAM &amp; Idiomata</span></div>
+          <div class="xp-body">
+            <div class="xp-role">Technical Instructor &amp; Curriculum Designer</div>
+            <ul>
+              <li>Designed comprehensive <strong>curricula for adult professionals</strong> using Adult Learning Theory and evidence-based pedagogy.</li>
+              <li>Built multi-modal materials and digital resources for self-paced and instructor-led training — directly applicable to developer enablement and onboarding.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TEACHING ═══ -->
+<section id="teaching">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-index">04 / Teaching</span>
+      <h2 class="sec-title">Language coaching for IT<small>Technical English &amp; Spanish, taught by someone in the industry</small></h2>
+    </div>
+    <div class="sec-body reveal">
+      <div class="teach">
+        <div class="teach-card">
+          <span class="flag" aria-hidden="true">🇺🇸</span>
+          <h3>English for Tech</h3>
+          <div class="sub">english as a foreign language</div>
+          <p>Technical English from a software engineer who lives in the industry — documentation, tickets, standups, demos and negotiations. Real IT vocabulary, zero filler grammar.</p>
+          <div class="chips">
+            <span class="chip">Documentation</span><span class="chip">Code Reviews</span><span class="chip">Standups</span><span class="chip">Interviews</span>
+          </div>
+        </div>
+        <div class="teach-card">
+          <span class="flag" aria-hidden="true">🇲🇽</span>
+          <h3>Spanish for Tech</h3>
+          <div class="sub">español como lengua extranjera</div>
+          <p>Español orientado al mundo tech para quienes trabajan con equipos latinoamericanos — reuniones, contratos y cultura de trabajo en LATAM, con contexto real de la industria.</p>
+          <div class="chips">
+            <span class="chip">Reuniones</span><span class="chip">Contratos</span><span class="chip">Cultura LATAM</span><span class="chip">Entrevistas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CERTIFICATIONS ═══ -->
+<section id="certs">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-index">05 / Credentials</span>
+      <h2 class="sec-title">Certifications<small>26 Salesforce credentials — including 2 Architect designations &amp; the full architect track</small></h2>
+    </div>
+    <div class="sec-body reveal">
+
+      <!-- Headline architect designations -->
+      <div class="cert-highlight">
+        <div class="cert-arch">
+          <span class="badge" aria-hidden="true">◆</span>
+          <div>
+            <div class="t">System Architect</div>
+            <div class="s">Salesforce capstone designation</div>
+          </div>
+        </div>
+        <div class="cert-arch">
+          <span class="badge" aria-hidden="true">◆</span>
+          <div>
+            <div class="t">Application Architect</div>
+            <div class="s">Salesforce capstone designation</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="certs-grid">
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">01</span>System Architect<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">02</span>Application Architect<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">03</span>Identity &amp; Access Management Architect<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">04</span>Integration Architect<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">05</span>Dev Lifecycle &amp; Deployment Architect<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">06</span>Data Architect<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">07</span>Sharing &amp; Visibility Architect<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">08</span>Platform Developer<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">09</span>Platform App Builder<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">10</span>Platform Administrator II<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">11</span>Platform Administrator<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">12</span>Business Analyst<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">13</span>Platform UX Designer<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">14</span>Data 360 Consultant<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">15</span>Agentforce Specialist<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">16</span>Agentforce Sales Consultant<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">17</span>Agentforce Service Consultant<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">18</span>Marketing Cloud Engagement Developer<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">19</span>Marketing Cloud Engagement Consultant<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">20</span>Marketing Cloud Engagement Administrator<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">21</span>Marketing Cloud Engagement Specialist<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">22</span>MuleSoft Integration Foundations<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">23</span>Marketing Cloud Engagement Foundations<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">24</span>Platform Foundations<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">25</span>Agentforce Sales Foundations<span class="arr" aria-hidden="true">↗</span></a>
+        <a class="cert" href="https://www.salesforce.com/trailblazer/josemendozaswe" target="_blank" rel="noopener"><span class="k">26</span>AI Associate<span class="arr" aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ EDUCATION ═══ -->
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-index">06 / Education</span>
+      <h2 class="sec-title">Study</h2>
+    </div>
+    <div class="sec-body reveal">
+      <div class="edu">
+        <div class="edu-card core">
+          <div class="deg">B.Sc. Computer Science</div>
+          <div class="sch">University of the People</div>
+          <div class="yr">Jan 2019 — Aug 2024</div>
+        </div>
+        <div class="edu-card">
+          <div class="deg">M.Sc. Information Technology</div>
+          <div class="sch">University of the People</div>
+          <div class="yr">Jun 2026 — Jun 2027</div>
+        </div>
+        <div class="edu-card">
+          <div class="deg">M.A. Digital Marketing</div>
+          <div class="sch">University of La Rioja (UNIR)</div>
+          <div class="yr">Oct 2025 — Apr 2027</div>
+        </div>
+        <div class="edu-card">
+          <div class="deg">B.A. Psychology</div>
+          <div class="sch">Metropolitan Autonomous University (UAM)</div>
+          <div class="yr">Sep 2011 — Apr 2015</div>
+        </div>
+      </div>
+      <div class="langs">
+        <div class="lang"><div class="n">Spanish</div><div class="lv">Native</div></div>
+        <div class="lang"><div class="n">English</div><div class="lv">C1 / C2</div></div>
+        <div class="lang"><div class="n">French</div><div class="lv">B1</div></div>
+        <div class="lang"><div class="n">Portuguese</div><div class="lv">A2</div></div>
+        <div class="lang"><div class="n">German</div><div class="lv">A2</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WRITING / BLOG TEASER ═══ -->
+<section id="writing">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-index">07 / Writing</span>
+      <h2 class="sec-title">Notes &amp; guides<small>Salesforce, Linux, DevOps and technical enablement — written to be genuinely useful</small></h2>
+    </div>
+    <div class="sec-body reveal">
+      <div class="posts">
+        <a class="post-row" href="blog/hello-world/">
+          <span class="date">2026-07-26</span>
+          <span class="ptitle">Why I built this site the boring way<span>Static HTML, no build step, and why it will still work in 2030.</span></span>
+          <span class="arr" aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <p style="margin-top:1.5rem;">
+        <a href="blog/" class="btn btn-ghost">All writing →</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SUPPORT ═══ -->
+<section id="support">
+  <div class="wrap">
+    <div class="support reveal">
+      <span class="sec-index">Support the work</span>
+      <h3>Find this useful?</h3>
+      <p>
+        I give away a lot of what I know for free — Salesforce walkthroughs, Linux guides,
+        technical English coaching, developer enablement. No paywalls. If any of it helped you,
+        consider a <code>sudo apt install coffee</code>. It keeps new content coming.
+      </p>
+      <div class="support-btns">
+        <a href="https://buymeacoffee.com/josemendozaswe" target="_blank" rel="noopener" class="btn btn-coffee">☕ Buy me a coffee</a>
+        <a href="https://patreon.com/josemendozaswe" target="_blank" rel="noopener" class="btn btn-patreon">Support on Patreon</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact">
+  <div class="wrap contact reveal">
+    <h2>Let's build<br/><em>something together.</em></h2>
+    <p>Open to software engineering, platform and Salesforce architecture roles — plus consulting, advisory and technical enablement, any scale.</p>
+    <div class="contact-links">
+      <a href="mailto:josemendozaswe@outlook.com" class="btn btn-primary">josemendozaswe@outlook.com</a>
+      <a href="https://github.com/josemendozaswe" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+      <a href="https://www.linkedin.com/in/josemendozaswe/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+    </div>
+
+    <!-- Web3Forms: replace data-access-key with your key (see README). Falls back to plain POST if unset. -->
+    <form class="contact-form" id="contactForm" data-access-key="YOUR_WEB3FORMS_ACCESS_KEY"
+          action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+      <input type="hidden" name="subject" value="New message from josemendozaswe.github.io" />
+      <input type="hidden" name="from_name" value="Portfolio contact form" />
+      <!-- honeypot: bots fill this, humans don't -->
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <div class="row">
+        <div class="field">
+          <label for="cf-name">Name</label>
+          <input id="cf-name" type="text" name="name" required autocomplete="name" />
+        </div>
+        <div class="field">
+          <label for="cf-email">Email</label>
+          <input id="cf-email" type="email" name="email" required autocomplete="email" />
+        </div>
+      </div>
+      <div class="field">
+        <label for="cf-msg">Message</label>
+        <textarea id="cf-msg" name="message" required></textarea>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-note">Protected against spam. No newsletter, no tracking — just reaches my inbox.</p>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="foot-inner">
+    <span>© <span id="year">2026</span> José A. Mendoza</span>
+    <span>computer science<span class="dot"> · </span>software engineering<span class="dot"> · </span>salesforce architecture</span>
+    <span>Mexico City, MX</span>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+
+<!-- Privacy-friendly analytics (no cookies, no consent banner needed).
+     Sign up free at https://www.goatcounter.com and replace YOURCODE below. -->
+<script data-goatcounter="https://YOURCODE.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+</body>
+</html>

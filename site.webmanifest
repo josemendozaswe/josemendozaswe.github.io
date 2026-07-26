@@ -1,0 +1,13 @@
+{
+  "name": "José A. Mendoza",
+  "short_name": "J. Mendoza",
+  "description": "Computer Scientist & Software Engineer — Salesforce Architect.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FBFAF7",
+  "theme_color": "#FBFAF7",
+  "icons": [
+    { "src": "/assets/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

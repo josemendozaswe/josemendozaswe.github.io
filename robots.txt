@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://josemendozaswe.github.io/sitemap.xml
