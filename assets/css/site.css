@@ -372,7 +372,14 @@ section { padding: 5.5rem 0; border-top: 1px solid var(--line); }
 }
 .edu-card .deg { font-family: var(--font-serif); font-weight: 500; font-size: 1.1rem; margin-bottom: 0.35rem; padding-right: 1.5rem; }
 .edu-card .sch { font-size: 0.86rem; color: var(--ink-soft); }
-.edu-card .yr { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); margin-top: 0.6rem; }
+.edu-card .yr { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); margin-top: 0.6rem; display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
+.edu-card .status {
+  font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  padding: 0.15rem 0.5rem; border-radius: 20px; white-space: nowrap;
+}
 
 .langs { display: flex; gap: 2.5rem; flex-wrap: wrap; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--line-soft); }
 .lang .n { font-family: var(--font-serif); font-size: 1.15rem; font-weight: 500; }
